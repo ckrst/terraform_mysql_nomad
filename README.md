@@ -5,6 +5,7 @@ create a backend.config file with the content
 
 <code>
 hostname = "app.terraform.io"
+
 organization = "YOUR ORGANIZATION"
 
 workspaces {
@@ -13,6 +14,7 @@ workspaces {
 </code>
 
 Configure your backend with
+
 <code>
 terraform init --backend-config=backend.config
 </code>
