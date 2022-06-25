@@ -1,0 +1,2 @@
+
+variable "nomad_url" {}

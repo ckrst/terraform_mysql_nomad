@@ -2,12 +2,8 @@ terraform {
   backend "remote" {}
 }
 
-provider "nomad" {}
-
-resource "nomad_namespace" "dev" {
-  name        = "dev"
-  description = "Recursos para desenvolvimento"
-  # quota       = "dev"
+provider "nomad" {
+  address = var.nomad_url
 }
 
 resource "nomad_job" "app" {

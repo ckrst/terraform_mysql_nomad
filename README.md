@@ -18,3 +18,5 @@ Configure your backend with
 <code>
 terraform init --backend-config=backend.config
 </code>
+
+<!--  & 'C:\Users\Vincius Kirst\Documents\desenv\tools\terraform.exe' plan -->

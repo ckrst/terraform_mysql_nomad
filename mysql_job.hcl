@@ -35,6 +35,10 @@ job "mysql-server" {
         ]
       }
 
+      env {
+        MYSQL_ROOT_PASSWORD = "changeme"
+      }
+
       template {
         data = <<EOH
 CREATE DATABASE dbwebappdb;
